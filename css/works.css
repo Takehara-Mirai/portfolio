@@ -116,7 +116,6 @@
 #baneer_line,
 #baneer_xmas,
 #baneer_halloween,
-#baneer_autumn_fashion,
 #dtp_fryer,
 #dtp_zoo_icon,
 #dtp_team_logo {
@@ -158,11 +157,6 @@
 
 #baneer_halloween .banner_img {
     width: 40%;
-    margin-inline: auto;
-}
-
-#baneer_autumn_fashion .banner_img{
-    width: 60%;
     margin-inline: auto;
 }
 

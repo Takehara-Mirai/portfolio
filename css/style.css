@@ -939,10 +939,6 @@ footer > p {
         width: 60%;
     }
 
-    #baneer_autumn_fashion .banner_img {
-        width: 100%;
-    }
-
     .VISION_wrapper .VISION_img {
         max-width: 120px;
     }
@@ -1036,6 +1032,10 @@ footer > p {
         width: 100%;
     }
 
+    #baneer_halloween .banner_img {
+        width: 80%;
+    }
+
     .website_text_inner,
     .banner_text_inner,
     .dtp_text_inner {
@@ -1056,10 +1056,6 @@ footer > p {
     .dtp_icon {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    #baneer_halloween .banner_img {
-        width: 80%;
     }
 
     #STRONGTH .STRONGTH_text .lineBreak {
