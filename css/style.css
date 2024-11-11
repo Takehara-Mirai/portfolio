@@ -1,0 +1,1103 @@
+/* ////////////////////////// 読み込みCSSファイル ////////////////////////// */
+
+/* 共通 css */
+@import url(basic.css);
+
+/* ABOUT */
+@import url(about.css);
+
+/* WORKS */
+@import url(works.css);
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+/* *******************************  ヘッダー ******************************* */
+.header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1000000;
+}
+
+.header_wrapper .logo {
+    width: 47px;
+}
+
+.header_wrapper #header_menu #menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_wrapper #header_menu #menu li {
+    padding: 10px 20px;
+    overflow: hidden;
+    color: transparent;
+    text-shadow: 0 -2em 0 #000, 0 0 0 #000;
+    transition: text-shadow 0.3s;
+}
+
+.header_wrapper #header_menu #menu li:hover {
+    text-shadow: 0 0 0 #000, 0 2em 0 #000;
+}
+
+/* *********************************************************************** */
+
+/* *******************************  メイン ******************************* */
+/* :::::::::::::::::::: メインビジュアル :::::::::::::::::::: */
+#mv h1 {
+    max-width: 800px;
+    margin: 220px auto 40px;
+    position: relative;
+}
+
+/* ---------- メインビジュアルSVG ---------- */
+.cls {
+    fill: none;
+    stroke: #33334d;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+    -webkit-animation: logo 3.5s ease-in forwards;
+    animation: logo 3.5s ease-in forwards;
+}
+@keyframes logo {
+    0% {
+        stroke-dashoffset: 2000;
+        fill: transparent;
+    }
+    50% {
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #33334d;
+    }
+}
+/* ---------------------------------------- */
+
+#mv #mv_name {
+    margin: 30px auto 0;
+    position: relative;
+    max-width: clamp(12.5rem, 1.705rem + 53.98vw, 36.25rem);
+    margin-inline: auto;
+}
+
+#mv #mv_name > .name_animation {
+    width: 100%;
+}
+
+#mv #mv_name::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #33334d;
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* ---------- 名前アニメーション ---------- */
+svg .svg-elem-1 {
+    stroke-dashoffset: 890.6770629882812px;
+    stroke-dasharray: 890.6770629882812px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+            0s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+}
+svg.active .svg-elem-1 {
+    stroke-dashoffset: 0;
+    fill: rgb(51, 51, 77);
+}
+svg .svg-elem-2 {
+    stroke-dashoffset: 652.9666748046875px;
+    stroke-dasharray: 652.9666748046875px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+            0.12s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s;
+    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s;
+}
+svg.active .svg-elem-2 {
+    stroke-dashoffset: 0;
+    fill: rgb(51, 51, 77);
+}
+svg .svg-elem-3 {
+    stroke-dashoffset: 208.27011108398438px;
+    stroke-dasharray: 208.27011108398438px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+            0.24s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+}
+svg.active .svg-elem-3 {
+    stroke-dashoffset: 0;
+    fill: rgb(51, 51, 77);
+}
+svg .svg-elem-4 {
+    stroke-dashoffset: 452.1082763671875px;
+    stroke-dasharray: 452.1082763671875px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+            0.36s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s;
+    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s;
+}
+svg.active .svg-elem-4 {
+    stroke-dashoffset: 0;
+    fill: rgb(51, 51, 77);
+}
+svg .svg-elem-5 {
+    stroke-dashoffset: 235.79664611816406px;
+    stroke-dasharray: 235.79664611816406px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+            0.48s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s;
+    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s;
+}
+svg.active .svg-elem-5 {
+    stroke-dashoffset: 0;
+    fill: rgb(51, 51, 77);
+}
+svg .svg-elem-6 {
+    stroke-dashoffset: 177.1021270751953px;
+    stroke-dasharray: 177.1021270751953px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+            0.6s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
+    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
+}
+svg.active .svg-elem-6 {
+    stroke-dashoffset: 0;
+    fill: rgb(51, 51, 77);
+}
+svg .svg-elem-7 {
+    stroke-dashoffset: 218.5951690673828px;
+    stroke-dasharray: 218.5951690673828px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+            0.72s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s;
+    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s;
+}
+svg.active .svg-elem-7 {
+    stroke-dashoffset: 0;
+    fill: rgb(51, 51, 77);
+}
+svg .svg-elem-8 {
+    stroke-dashoffset: 926.985107421875px;
+    stroke-dasharray: 926.985107421875px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+            0.84s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s;
+    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s;
+}
+svg.active .svg-elem-8 {
+    stroke-dashoffset: 0;
+    fill: rgb(51, 51, 77);
+}
+svg .svg-elem-9 {
+    stroke-dashoffset: 160.4557647705078px;
+    stroke-dasharray: 160.4557647705078px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+            0.96s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s;
+    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s;
+}
+svg.active .svg-elem-9 {
+    stroke-dashoffset: 0;
+    fill: rgb(51, 51, 77);
+}
+svg .svg-elem-10 {
+    stroke-dashoffset: 177.10220336914062px;
+    stroke-dasharray: 177.10220336914062px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+            1.08s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s;
+    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s;
+}
+svg.active .svg-elem-10 {
+    stroke-dashoffset: 0;
+    fill: rgb(51, 51, 77);
+}
+svg .svg-elem-11 {
+    stroke-dashoffset: 235.7778778076172px;
+    stroke-dasharray: 235.7778778076172px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+            1.2s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8s;
+    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8s;
+}
+svg.active .svg-elem-11 {
+    stroke-dashoffset: 0;
+    fill: rgb(51, 51, 77);
+}
+svg .svg-elem-12 {
+    stroke-dashoffset: 139.82582092285156px;
+    stroke-dasharray: 139.82582092285156px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+            1.3199999999999998s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.9000000000000001s;
+    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+            1.3199999999999998s,
+        fill 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 1.9000000000000001s;
+}
+svg.active .svg-elem-12 {
+    stroke-dashoffset: 0;
+    fill: rgb(51, 51, 77);
+}
+/* ---------------------------------------- */
+
+#mv #mv_text_area {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* スクロール */
+.scroll_area {
+    height: 90px;
+    margin-top: 120px;
+}
+
+.scroll p {
+    transform: rotate(-90deg);
+    margin-bottom: 20px;
+}
+
+.scroll {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 線 */
+.scroll::before {
+    animation: scroll 2s infinite;
+    background-color: #5f5f5f;
+    bottom: -70px;
+    content: "";
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 1px;
+}
+
+/* 線のアニメーション */
+@keyframes scroll {
+    0% {
+        transform: scale(1, 0);
+        transform-origin: 0 0;
+    }
+    50% {
+        transform: scale(1, 1);
+        transform-origin: 0 0;
+    }
+    51% {
+        transform: scale(1, 1);
+        transform-origin: 0 100%;
+    }
+    100% {
+        transform: scale(1, 0);
+        transform-origin: 0 100%;
+    }
+}
+
+/* ::::::::::::::::::::::: WORKS ::::::::::::::::::::::: */
+#WROKS h2 {
+    margin-top: 160px;
+}
+
+#ABOUT h2,
+#CONTACT h2 {
+    font-family: "mendl-sans-dusk";
+    font-weight: 600;
+    position: relative;
+}
+
+#WROKS > p,
+#ABOUT > p {
+    text-align: center;
+}
+
+/* ::::::::::::::: タブ付きフォルダ ::::::::::::::: */
+.tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.tab-wrap:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #33334d;
+    display: block;
+    order: -1;
+}
+
+.tab-label {
+    color: White;
+    background: LightGray;
+    text-align: center;
+    padding: 6px 1em;
+    order: -1;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab-label:nth-child(5) {
+    padding-inline: 3.6em;
+}
+
+.tab-label:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.tab-content {
+    width: 100%;
+    background-color: rgba(253, 253, 253, 0.5);
+    background-blend-mode: lighten;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.tab-switch:checked + .tab-label {
+    background: #33334d;
+}
+
+.tab-switch:checked + .tab-label + .tab-content {
+    height: auto;
+    overflow: auto;
+    padding: 20px 15px 40px;
+    opacity: 1;
+    transition: 0.5s opacity;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.tab-switch {
+    display: none;
+}
+
+.tab-wrap .tab-content_inner {
+    margin: 20px 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.tab-wrap .tab-content .tab-content_img {
+    flex-basis: 40%;
+}
+.item_box:last-child{
+    align-self: flex-end;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::: ホバーテキスト表示 ::::::::::: */
+
+.item_box * {
+    box-sizing: border-box;
+}
+.item_box {
+    width: 36%;
+}
+
+.item_link {
+    display: block;
+}
+.item_content {
+    position: relative;
+    overflow: hidden;
+}
+.item_image img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+.item_mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.8);
+    opacity: 0;
+}
+.item_mask-text {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 0.8em;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.item_text {
+    margin-top: 10px;
+    text-align: center;
+}
+.item_box .item_link:hover .item_mask {
+    opacity: 1;
+}
+
+.item_box.-text-from-left .item_mask {
+    transition: opacity 0.5s ease;
+}
+.item_box.-text-from-left .item_mask-text {
+    left: -100%;
+    transition: left 0.5s ease;
+}
+.item_box.-text-from-left .item_link:hover .item_mask-text {
+    left: 0;
+    transform: translateY(-50%);
+}
+/* :::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::::: ABOUT ::::::::::::::::::::::: */
+#ABOUT,
+.CONTACT_wrapper,
+#thank_you {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+#ABOUT {
+    margin-top: 140px;
+}
+
+#ABOUT_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#ABOUT_top .text_wrapper {
+    flex-basis: 65%;
+}
+
+#ABOUT_top .name_ruby {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 0.5rem;
+}
+
+#ABOUT_top .text_wrapper .name p,
+#ABOUT_bottom p:nth-child(1) {
+    font-family: "ta-koigokoro";
+}
+
+#ABOUT_top .text_wrapper .name > p {
+    font-size: clamp(1.375rem, 0.625rem + 3.75vw, 2.5rem);
+}
+
+#ABOUT_top .text_wrapper > .text {
+    margin-top: 40px;
+}
+
+#ABOUT_top .text_wrapper .text p + p {
+    margin-top: 20px;
+}
+
+#ABOUT .button {
+    margin-top: 40px;
+}
+
+.ABOUT_img {
+    flex-basis: 35%;
+}
+
+#ABOUT_bottom {
+    margin-top: 120px;
+    padding-inline: 2rem;
+}
+
+#ABOUT_bottom p:nth-child(1) {
+    font-size: clamp(1.125rem, 0.625rem + 2.5vw, 1.875rem);
+    text-align: center;
+}
+
+#ABOUT_bottom p:nth-child(2) {
+    margin: 40px 0 20px;
+}
+/* ::::::::::::::::::::::: thank you ::::::::::::::::::::::: */
+#thank_you {
+    margin-top: 200px;
+    text-align: center;
+}
+
+#thank_you .thank_you_img {
+    max-width: 300px;
+    margin: 0 auto 40px;
+}
+
+/* *********************************************************************** */
+
+/* *******************************  フッター ******************************* */
+#CONTACT {
+    background-color: #e8e8e8;
+    text-align: center;
+    margin-top: 200px;
+    padding: 60px 0;
+}
+
+#CONTACT h2 {
+    margin: 0;
+}
+
+#CONTACT h2::before {
+    left: 45%;
+}
+
+#CONTACT h2::after {
+    right: 53.6%;
+}
+
+#CONTACT > p {
+    margin: 16px 0 40px;
+}
+
+.CONTACT_wrapper {
+    background-color: #fdfdfd;
+    padding: 30px 120px;
+}
+
+.CONTACT_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.CONTACT_inner .mail,
+.CONTACT_inner .tel {
+    display: flex;
+    align-items: center;
+}
+
+.CONTACT_inner .mail p,
+.CONTACT_inner .tel p {
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.CONTACT_inner .mail {
+    gap: 0.8rem;
+}
+
+.CONTACT_inner .tel {
+    gap: 0.3rem;
+}
+
+.CONTACT_inner .mail .mail_icon,
+.CONTACT_inner .tel .tel_icon {
+    flex-basis: 40px;
+}
+
+.CONTACT_inner .mail .mail_text,
+.CONTACT_inner .tel .tel_text {
+    border-bottom: 1px solid #33334d;
+}
+
+.CONTACT_wrapper > p {
+    margin: 20px auto 0;
+    text-align: left;
+    position: relative;
+    max-width: 410px;
+    white-space: nowrap;
+}
+
+.CONTACT_wrapper > p::before {
+    content: "※";
+    position: absolute;
+    left: -1rem;
+}
+
+footer > p {
+    background-color: #4a4a56;
+    color: #fdfdfd;
+    text-align: center;
+    padding: 40px;
+}
+/* *********************************************************************** */
+
+/* **************************** メディアクエリ ******************************/
+/* ///////////////////// max-width: 900px ///////////////////// */
+@media screen and (max-width: 900px) {
+    #VISION > p .lineBreak,
+    #STRONGTH .STRONGTH_text .lineBreak {
+        padding-top: 0.7rem;
+    }
+}
+/* //////////////////////////////////////////////////////////// */
+/* ///////////////////// max-width: 790px ///////////////////// */
+@media screen and (max-width: 790px){
+    .item_box {
+        width: 46%;
+    }
+
+    .tab-wrap .tab-content_inner {
+        margin: 0 0 1.2rem;
+        justify-content: space-around;
+        gap: 1.2rem;
+    }
+}
+/* //////////////////////////////////////////////////////////// */
+/* ///////////////////// max-width: 650px ///////////////////// */
+@media screen and (max-width: 650px) {
+    /* トップに戻るボタン */
+    .topButton {
+        right: 10px;
+    }
+    /* :::::: ドロワーメニュー :::::: */
+    header #drawerButton {
+        position: fixed;
+        top: 6px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        display: block;
+        z-index: 1000000;
+    }
+
+    #drawerButton span {
+        width: 70%;
+        height: 2px;
+        display: block;
+        background-color: #33334d;
+        position: absolute;
+        left: 20%;
+        transition: all 0.3s linear;
+    }
+
+    #drawerButton span:nth-child(1) {
+        height: 3px;
+        top: 8px;
+    }
+
+    #drawerButton span:nth-child(2) {
+        top: 19px;
+    }
+
+    #drawerButton span:nth-child(3) {
+        bottom: 8px;
+    }
+
+    #drawerButton.close span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 18px;
+    }
+
+    #drawerButton.close span:nth-child(2) {
+        transform: scale(0);
+    }
+
+    #drawerButton.close span:nth-child(3) {
+        transform: rotate(45deg);
+        top: 18px;
+    }
+    /* ::::::::::::::::::::::::::: */
+    /* :::::: 見えないメニュー :::::: */
+    .header_wrapper #header_menu #menu {
+        background-color: #fdfdfd;
+        display: block;
+        position: fixed;
+        height: 100%;
+        width: 60%;
+        right: -100vw;
+        top: 0;
+        transition: all 0.3s linear;
+        z-index: 20000;
+        opacity: 0.8;
+    }
+
+    .header_wrapper #header_menu #menu li:nth-child(1) {
+        margin-top: 80px;
+    }
+
+    .header_wrapper #header_menu #menu li {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .header_wrapper #header_menu #menu.open {
+        right: 0;
+    }
+
+    #menu li:nth-child(3) {
+        padding-left: 0;
+    }
+    /* ::::::::::::::::::::::::::::::::::::::::: */
+    #mv #mv_text_area {
+        margin-top: 0;
+    }
+
+    #ABOUT_top {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #ABOUT_bottom {
+        margin-top: 80px;
+    }
+
+    .ABOUT_img {
+        max-width: 250px;
+    }
+
+    #ABOUT_top .text_wrapper > .text {
+        margin-top: 20px;
+    }
+
+    #ABOUT .button {
+        margin-top: 20px;
+    }
+
+    .CONTACT_wrapper {
+        padding-inline: 90px;
+    }
+
+    .website_wrapper,
+    .banner_wrapper {
+        margin-top: 30px;
+    }
+
+    .dtp_wrapper {
+        margin-top: 10px;
+    }
+
+    #website_text_wrapper,
+    #banner_text_wrapper,
+    #dtp_text_wrapper {
+        margin-top: 40px;
+    }
+
+    .website_text_inner dt,
+    .website_icon dt,
+    .banner_text_inner dt,
+    .banner_icon dt,
+    .dtp_text_inner dt,
+    .dtp_icon dt {
+        flex-basis: 20%;
+        font-weight: normal;
+    }
+
+    .website_icon,
+    .banner_icon,
+    .dtp_icon {
+        gap: 0;
+    }
+
+    #VISION > p {
+        text-align: center;
+    }
+
+    #VISION > p .lineBreak,
+    #STRONGTH .STRONGTH_text .lineBreak {
+        padding-top: 0.3rem;
+    }
+
+    #VISION .VISION_wrapper {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    #STRONGTH .STRONGTH_wrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .VISION_wrapper .VISION_img {
+        width: 150px;
+    }
+
+    .STRONGTH_wrapper .STRONGTH_img,
+    #PASSTIME .PASSTIME_wrapper .PASSTIME_img {
+        max-width: 200px;
+    }
+
+    #SKILL .SKILL_wrapper .flex {
+        display: block;
+    }
+    #SKILL .SKILL_wrapper .SKILL_inner .SKILL_icon {
+        width: 40px;
+    }
+
+    #SKILL .SKILL_wrapper .SKILL_inner {
+        margin-bottom: 60px;
+    }
+
+    #SKILL .SKILL_wrapper .flex:not(:first-child) {
+        margin-top: 0;
+    }
+
+    #PASSTIME {
+        padding-inline: 1.5rem;
+    }
+
+    #PASSTIME > p:nth-child(3) {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #PASSTIME .PASSTIME_wrapper {
+        flex-direction: column-reverse;
+        gap: 0.8rem;
+    }
+
+    #PASSTIME .PASSTIME_wrapper .PASSTIME_text {
+        margin-top: 0;
+        word-break: break-all;
+    }
+
+    #thank_you .thank_you_img {
+        width: 250px;
+        margin: 0 auto 40px;
+    }
+
+    #thank_you p + p {
+        margin-top: 0;
+    }
+}
+/* //////////////////////////////////////////////////////////// */
+/* ///////////////////// max-width: 500px ///////////////////// */
+@media screen and (max-width: 500px) {
+    #mv #mv_text_area > p{
+        line-height: 1.2rem;
+    }
+
+    #mv #mv_name::before {
+        bottom: 46px;
+    }
+
+    #ABOUT_top .name_ruby {
+        gap: 20px;
+    }
+
+    .CONTACT_inner {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .CONTACT_inner .mail .mail_icon,
+    .CONTACT_inner .tel .tel_icon {
+        flex-basis: 30px;
+    }
+
+    .banner_img_wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .banner_wrapper .banner_img {
+        width: 48%;
+    }
+
+    #baneer_xmas .banner_img {
+        width: 70%;
+    }
+
+    #baneer_halloween .banner_img {
+        width: 60%;
+    }
+
+    #baneer_autumn_fashion .banner_img {
+        width: 100%;
+    }
+
+    .VISION_wrapper .VISION_img {
+        max-width: 120px;
+    }
+}
+
+/* //////////////////////////////////////////////////////////// */
+/* ///////////////////// max-width: 420px ///////////////////// */
+@media screen and (max-width: 420px) {
+    .banner_wrapper .banner_img {
+        width: 60%;
+    }
+
+    .dtp_wrapper .dtp_img_wrapper {
+        flex-direction: column;
+
+    }
+
+    .dtp_wrapper .dtp_img {
+        margin-top: 20px;
+        width: 60%;
+    }
+
+    #dtp_fryer .dtp_wrapper .dtp_img_wrapper .dtp_img {
+        width: 70%;
+    }
+
+    .ABOUT_img {
+        max-width: 200px;
+    }
+
+    #ABOUT_bottom p:nth-child(1) {
+        text-align: left;
+        white-space: nowrap;
+    }
+}
+/* //////////////////////////////////////////////////////////// */
+/* ///////////////////// max-width: 390px ///////////////////// */
+@media screen and (max-width: 390px) {
+    #mv h1 {
+        margin: 180px auto 20px;
+    }
+
+    .tab-label {
+        font-size: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
+    }
+
+    #mv #mv_text_area {
+        margin-top: 0px;
+    }
+
+    .tab-wrap .tab-content_inner {
+        margin: 0 0 1.2rem;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .item_box {
+        width: 80%;
+    }
+
+    .item_box:last-child {
+        align-self: center;
+    }
+
+    #ABOUT_top .name_ruby {
+        margin-left: 0;
+    }
+
+    #ABOUT_top .text_wrapper > .text {
+        margin-top: 20px;
+    }
+
+    .CONTACT_wrapper > p {
+        width: 100%;
+        white-space: normal;
+    }
+
+    .CONTACT_wrapper {
+        padding: 30px 0 30px 2rem;
+    }
+
+    #CONTACT > p {
+        margin: 16px 0 20px;
+    }
+
+    .banner_wrapper .banner_img {
+        width: 80%;
+    }
+
+    #baneer_xmas .banner_img {
+        width: 100%;
+    }
+
+    .website_text_inner,
+    .banner_text_inner,
+    .dtp_text_inner {
+        flex-direction: column;
+    }
+
+    .website_text_inner dt,
+    .website_icon dt,
+    .banner_text_inner dt,
+    .banner_icon dt,
+    .dtp_text_inner dt,
+    .dtp_icon dt {
+        font-weight: 600;
+    }
+
+    .website_icon,
+    .banner_icon,
+    .dtp_icon {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #baneer_halloween .banner_img {
+        width: 80%;
+    }
+
+    #STRONGTH .STRONGTH_text .lineBreak {
+        padding-left: 1rem;
+    }
+
+    #SKILL .SKILL_wrapper .SKILL_inner {
+        margin-bottom: 30px;
+    }
+
+    #SKILL .SKILL_wrapper {
+        padding-left: 1rem;
+    }
+}
+
+/* //////////////////////////////////////////////////////////// */
+/* ///////////////////// max-width: 320px ///////////////////// */
+@media screen and (max-width: 320px) {
+    #mv h1::before {
+        right: 35%;
+        top: -0.1%;
+    }
+
+    #mv h1::after {
+        right: 31%;
+        top: -0.1%;
+    }
+
+    #ABOUT_bottom p:nth-child(1) {
+        white-space: normal;
+    }
+
+    #thank_you .thank_you_img {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    #thank_you p {
+        text-align: left;
+    }
+}

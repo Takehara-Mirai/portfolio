@@ -1,0 +1,191 @@
+/* :::::::::::::::::::: 見出し :::::::::::::::::::: */
+.WEBSITE h4,
+.BANNER h4,
+.DTP h4 {
+    font-family: "mendl-sans-dusk";
+    align-items: center; 
+    display: flex; 
+    white-space: nowrap;
+}
+
+/* ボーダー線 */
+.border.line::after {
+    background-color: #4e4e4e; 
+    content: "";
+    height: 1.6px; /* 横線の高さ */
+    width: 100%; /* 横線の長さ */
+    animation: border_anim 1s linear forwards;
+    margin-left: 1rem;
+}
+
+@keyframes border_anim {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 87%;
+    }
+}
+
+.website_cur,
+#baneer_real_estate,
+#baneer_xmas,
+#dtp_card,
+#dtp_fryer {
+    margin-top: 100px;
+}
+
+/* :::::::::::::::::::: コンテンツ幅 :::::::::::::::::::: */
+.website_wrapper,
+#banner_text_wrapper,
+.dtp_wrapper {
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+.banner_wrapper {
+    max-width: 900px;
+}
+
+.website_wrapper,
+.banner_wrapper,
+.dtp_wrapper {
+    margin: 40px auto 0;
+}
+
+/* :::::::::::::::::::: 説明文 :::::::::::::::::::: */
+#website_text_wrapper,
+#banner_text_wrapper,
+#dtp_text_wrapper {
+    margin-top: 80px;
+}
+
+.website_text_inner,
+.banner_text_inner,
+.dtp_text_inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.website_text_inner + .website_text_inner,
+.banner_text_inner + .banner_text_inner,
+.dtp_text_inner + .dtp_text_inner {
+    margin-top: 40px;
+}
+
+.website_text_inner dt,
+.website_icon dt,
+.banner_text_inner dt,
+.banner_icon dt,
+.dtp_text_inner dt,
+.dtp_icon dt {
+    flex-basis: 14%;
+    font-weight: normal;
+}
+
+.website_text_inner dd,
+.banner_text_inner dd,
+.dtp_text_inner dd {
+    flex-basis: 84%;
+    line-height: 1.4rem;
+}
+
+.icon_wrapper {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.website_icon,
+.banner_icon,
+.dtp_icon {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    gap: 0.8rem;
+}
+
+.website_icon .icon,
+.banner_icon .icon,
+.dtp_icon .icon {
+    width: 30px;
+}
+
+#website_port,
+#baneer_real_estate,
+#baneer_line,
+#baneer_xmas,
+#baneer_halloween,
+#baneer_autumn_fashion,
+#dtp_fryer,
+#dtp_zoo_icon,
+#dtp_team_logo {
+    margin-top: 200px;
+}
+
+/* :::::::::::::::::::: WEB SITE :::::::::::::::::::: */
+.website_wrapper .website_pc_img,
+.website_wrapper .website_img{
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.website_wrapper .website_img {
+    margin-top: 40px;
+}
+
+/* ::::::::::::::::::::: BANNER ::::::::::::::::::::: */
+.banner_img_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.banner_wrapper .banner_img {
+    width: 30%;
+}
+
+#baneer_xmas .banner_img {
+    width: 40%;
+}
+
+#baneer_xmas .banner_img_wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#baneer_halloween .banner_img {
+    width: 40%;
+    margin-inline: auto;
+}
+
+#baneer_autumn_fashion .banner_img{
+    width: 60%;
+    margin-inline: auto;
+}
+
+/* ::::::::::::::::::::::: DTP :::::::::::::::::::::: */
+.dtp_wrapper .dtp_img_wrapper {
+    max-width: 660px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dtp_wrapper .dtp_img {
+    margin-top: 20px;
+    width: 35%;
+}
+
+#dtp_fryer .dtp_wrapper .dtp_img_wrapper .dtp_img{
+    width: 45%;
+}
+
+#dtp_team_logo .dtp_wrapper .dtp_img{
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 60px;
+}

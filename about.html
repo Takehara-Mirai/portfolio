@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>竹原 未来のポートフォリオ</title>
+        <meta name="description" content="竹原 未来のポートフォリオWebサイト" />
+        <link rel="stylesheet" href="css/destyle.css" />
+
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet"/>
+
+        <!-- Adobe font -->
+        <link rel="stylesheet" href="https://use.typekit.net/jvz8nfo.css" />
+        <script src="js/adobefonts.js"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/knu8bsc.css" />
+
+        <!-- AnimateCSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <!-- トップに戻るボタン -->
+        <div class="topButton">
+            <a href="#">
+                <img src="images/marker.png" alt="トップに戻るボタン"/>
+            </a>
+        </div>
+        <!-- ***********************************  ヘッダー *********************************** -->
+        <header>
+            <div class="header_wrapper container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="M"/>
+                    </a>
+                </div>
+
+                <!-- ドロワーボタン -->
+                <button id="drawerButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div id="header_menu">
+                    <!-- 見えないメニュー -->
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="webdesign.html">WEB DESIGN</a></li>
+                            <li><a href="dtp.html">DTP</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="#CONTACT">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- ************************************************************************************ -->
+        <!-- **************************************  メイン ************************************** -->
+        <main>
+            <h2>ABOUT</h2>
+            <p>私について</p>
+            <!-- :::::::::::::::::::::::: VISION ::::::::::::::::::::::::  -->
+            <section id="VISION" class="container">
+                <p class="target animate__animated">
+                    「<span class="marker">ときめき</span>」や「<span class="marker">わくわく</span>」を<span class="lineBreak">届けられる</span></span><span class="lineBreak">Webデザイナーに。</span>
+                </p>
+
+                <div class="VISION_wrapper">
+                    <div class="VISION_text">
+                        <p class="target animate__animated">
+                            前職で販売をしながらやりがいを感じていたのは、「お客様の心を動かせた時」です。
+                        </p>
+
+                        <p class="target animate__animated">
+                            明日から着るのが楽しみ!、この服に出会えてよかった!、頑張れる!など<br />
+                            接客を通して「ときめき」や「わくわく」を感じてもらえた時は、
+                            私自身も嬉しくなって笑顔になっていました。
+                        </p>
+
+                        <p class="target animate__animated">
+                            自分が手掛けたモノを通して「ときめき」や「わくわく」を感じて、
+                            その人にとってのきっかけになるようなデザインができるWebデザイナーを目指します。
+                        </p>
+                    </div>
+
+                    <div class="VISION_img target animate__animated">
+                        <img src="images/present.png" alt="プレゼントを持ってる女の子"/>
+                    </div>
+                </div>
+            </section>
+
+            <!-- :::::::::::::::::::::::: STRONGTH ::::::::::::::::::::::::  -->
+            <section id="STRONGTH" class="container">
+                <h2 class="target animate__animated">STRONGTH</h2>
+                <p class="target animate__animated">私の強み</p>
+
+                <div class="STRONGTH_wrapper">
+                    <div class="STRONGTH_img target animate__animated">
+                        <img src="images/strongth_mono .png" alt="勉強する女の子"/>
+                    </div>
+
+                    <div class="STRONGTH_text">
+                        <p class="nowrap target animate__animated">
+                            「<span class="marker">粘り強く最後まで</span>取り組む力」
+                        </p>
+
+                        <p class="target animate__animated">
+                            勉強も仕事も自分が納得するまで取り組むところが私の強みです。
+                        </p>
+
+                        <p class="target animate__animated">
+                            自分の中に落とし込めるまで何度も繰り返しやってみる、
+                            できるまで挑戦してみることを大切にしています。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- :::::::::::::::::::::::: SKILL ::::::::::::::::::::::::  -->
+            <section id="SKILL" class="container">
+                <h2 class="target animate__animated">SKILL</h2>
+                <p class="target animate__animated">できること</p>
+
+                <div class="SKILL_wrapper">
+                    <div class="flex">
+                        <!-- HTML -->
+                        <div class="SKILL_inner target animate__animated">
+                            <div class="SKILL_icon">
+                                <img src="images/HTML.png" alt="HTML" />
+                            </div>
+                            <div class="skill_text">
+                                <p><span>HTML5</span></p>
+                                <p>Webサイトを一から構築することが可能。<br>
+                                    使用エディタはVSCode。</p>
+                            </div>
+                        </div>
+    
+                        <!-- CSS -->
+                        <div class="SKILL_inner target animate__animated">
+                            <div class="SKILL_icon">
+                                <img src="images/CSS.png" alt="CSS" />
+                            </div>
+                            <div class="skill_text">
+                                <p><span>CSS3</span></p>
+                                <p>Webサイトを一から構築することが可能。<br>
+                                    使用エディタはVSCode。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- illustrator -->
+                        <div class="SKILL_inner target animate__animated">
+                            <div class="SKILL_icon">
+                                <img src="images/illustrator.png" alt="illustrator" />
+                            </div>
+                            <div class="skill_text">
+                                <p><span>illustrator</span></p>
+                                <p>名刺、チラシ等のデザイン制作に使用。</p>
+                            </div>
+                        </div>
+    
+                        <!-- Photoshop -->
+                        <div class="SKILL_inner target animate__animated">
+                            <div class="SKILL_icon">
+                                <img src="images/Photoshop.png" alt="Photoshop" />
+                            </div>
+                            <div class="skill_text">
+                                <p><span>Photoshop</span></p>
+                                <p>画像の切り抜きや加工、バナー制作に使用。</p>
+                            </div>
+                        </div>
+
+                        <!-- figma -->
+                    <div class="SKILL_inner target animate__animated">
+                        <div class="SKILL_icon">
+                            <img src="images/figma.png" alt="figma" />
+                        </div>
+                        <div class="skill_text">
+                            <p><span>figma</span></p>
+                            <p>Webサイトのデザインカンプに使用。<br>
+                                オートレイアウト、コンポーネント、バリアブルの設定ができます。</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    
+
+                    <div class="flex">
+                        <!-- Cnava -->
+                        <div class="SKILL_inner target animate__animated">
+                            <div class="SKILL_icon">
+                                <img src="images/Canva.png" alt="canva" />
+                            </div>
+                            <div class="skill_text">
+                                <p><span>Canva</span></p>
+                                <p>スマホ版を使って画像加工、文字入れ等で使用した経験があります。</p>
+                            </div>
+                        </div>
+    
+                        <!-- capcut -->
+                        <div class="SKILL_inner target animate__animated">
+                            <div class="SKILL_icon">
+                                <img src="images/capcut.png" alt="capcut" />
+                            </div>
+                            <div class="skill_text">
+                                <p><span>CapCut</span></p>
+                                <p>スマホ版を使って動画編集をした経験があります。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Word -->
+                        <div class="SKILL_inner target animate__animated">
+                            <div class="SKILL_icon">
+                                <img src="images/Word.png" alt="Word" />
+                            </div>
+                            <div class="skill_text">
+                                <p><span>Word</span></p>
+                                <p>業務で使用しており書類を作成できます。</p>
+                            </div>
+                        </div>
+    
+                        <!-- Excel -->
+                        <div class="SKILL_inner target animate__animated">
+                            <div class="SKILL_icon">
+                                <img src="images/Excel.png" alt="Excel" />
+                            </div>
+                            <div class="skill_text">
+                                <p><span>Excel</span></p>
+                                <p>業務で使用しており四則演算を使った表を作れます。</p>
+                            </div>
+                        </div>
+
+                        <!-- Powerpoint -->
+                    <div class="SKILL_inner target animate__animated">
+                        <div class="SKILL_icon">
+                            <img src="images/powerpoint.png" alt="powerpoint" />
+                        </div>
+                        <div class="skill_text">
+                            <p><span>Powerpoint</span></p>
+                            <p>業務で使用しており資料やPOP、チラシを作った経験があります。</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- :::::::::::::::::::::::: PASTIME ::::::::::::::::::::::::  -->
+            <section id="PASSTIME" class="container">
+                <h2 class="target animate__animated">PASTIME</h2>
+                <p class="target animate__animated">趣味</p>
+
+                <p class="target animate__animated">
+                    「<span class="marker">ハンドメイド</span>」
+                </p>
+
+                <div class="PASSTIME_wrapper">
+                    <div class="PASSTIME_text">
+                        <p class="target animate__animated">
+                            レジンを使って、透明感を活かしたデザインのアクセサリーやスマホケースを制作、販売しております。
+                        </p>
+                        <p class="target animate__animated">
+                            まだまだブランドは小さいですが、今年から本格的に販売を始めて約100点以上売り上げ、多くのお客様にお届けしています。
+                        </p>
+
+                        <div class="PASSTIME_account">
+                            <div class="account target animate__animated">
+                                <div class="icon">
+                                    <a href="https://minne.com/@mire0224" target="_blank">
+                                        <img src="images/cart.svg" alt="ショッピングカート"/>
+                                    </a>
+                                </div>
+                                <p>
+                                    <a href="https://minne.com/@mire0224" target="_blank">
+                                        https://minne.com/@mire0224
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="account target animate__animated">
+                                <div class="icon">
+                                    <a href="https://www.instagram.com/cu.rcuma_/" target="_blank">
+                                        <img src="images/Instagram_icon.png" alt="Instagram"/>
+                                </a>
+                                </div>
+                                <p>
+                                    <a href="https://www.instagram.com/cu.rcuma_/" target="_blank">
+                                        https://www.instagram.com/cu.rcuma_/
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="PASSTIME_img target animate__animated">
+                        <img src="images/resin.png" alt="レジンキット"/>
+                    </div>
+                </div>
+            </section>
+
+            <!-- :::::::::::::::::::::::: thank you ::::::::::::::::::::::::  -->
+            <section id="thank_you" class="container">
+                <div class="thank_you_img target animate__animated">
+                    <img src="images/presentation_icon.png" alt="プレゼンテーションをする女の子"/>
+                </div>
+                <p class="target animate__animated">最後までご覧いただきありがとうございました！</p>
+                <p class="target animate__animated">一緒に働かせていただける会社を探して就職活動中です！</p>
+                <p class="target animate__animated">少しでも気になればよろしくお願いいたします</p>
+            </section>
+        </main>
+        <!-- ************************************************************************************ -->
+        <!-- *************************************  フッター ************************************* -->
+
+        <footer>
+            <div id="CONTACT" class="target animate__animated">
+                <h2>CONTACT</h2>
+                <p>少しでも気になればご連絡くださると嬉しいです！</p>
+
+                <div class="CONTACT_wrapper">
+                    <div class="CONTACT_inner">
+                        <div class="mail">
+                            <div class="mail_icon">
+                                <img src="images/mail_icon.png" alt="メール"/>
+                            </div>
+                            <p class="mail_text">
+                                <a href="mail:takehara.m.224@gmail.com">
+                                    takehara.m.224@gmail.com
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="tel">
+                            <div class="tel_icon">
+                                <img src="images/iPhone_icon.png" alt="電話"/>
+                            </div>
+                            <p class="tel_text">
+                                <a href="tel:090-5900-3650">090-5900-3650</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>
+                        平日は授業中の為、電話に出られない可能性があります。<br />
+                        こちらから折り返しお電話させていただきます。
+                    </p>
+                </div>
+            </div>
+
+            <p><small>&copy;MIRAI TAKEHARA</small></p>
+        </footer>
+
+        <script src="js/scrollObservation.js"></script>
+        <script src="js/drawerBtutton.js"></script>
+        <script src="js/marker.js"></script>
+    </body>
+</html>
