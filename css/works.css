@@ -9,7 +9,8 @@
 }
 
 /* ボーダー線 */
-.border.line::after {
+.border.line::after,
+.border_Immediately::after {
     background-color: #4e4e4e; 
     content: "";
     height: 1.6px; /* 横線の高さ */
