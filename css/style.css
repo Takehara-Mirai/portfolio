@@ -592,18 +592,19 @@ svg.active .svg-elem-12 {
 }
 
 #CONTACT > p {
-    margin: 16px 0 40px;
+    margin: 16px 1rem 20px;
 }
 
 .CONTACT_wrapper {
     background-color: #fdfdfd;
-    padding: 30px 120px;
+    padding-block: 30px;
 }
 
 .CONTACT_inner {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 16px;
 }
 
 .CONTACT_inner .mail,
@@ -638,15 +639,13 @@ svg.active .svg-elem-12 {
 
 .CONTACT_wrapper > p {
     margin: 20px auto 0;
-    text-align: left;
+    text-align: center;
     position: relative;
-    max-width: 410px;
     white-space: nowrap;
 }
 
 .CONTACT_wrapper > p::before {
     content: "※";
-    position: absolute;
     left: -1rem;
 }
 
@@ -789,10 +788,6 @@ footer > p {
         margin-top: 20px;
     }
 
-    .CONTACT_wrapper {
-        padding-inline: 90px;
-    }
-
     .website_wrapper,
     .banner_wrapper {
         margin-top: 30px;
@@ -910,16 +905,6 @@ footer > p {
         gap: 20px;
     }
 
-    .CONTACT_inner {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .CONTACT_inner .mail .mail_icon,
-    .CONTACT_inner .tel .tel_icon {
-        flex-basis: 30px;
-    }
-
     .banner_img_wrapper {
         flex-wrap: wrap;
         justify-content: center;
@@ -972,6 +957,17 @@ footer > p {
         text-align: left;
         white-space: nowrap;
     }
+
+    .CONTACT_inner {
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .CONTACT_wrapper > p{
+        padding-inline: 1rem;
+        white-space: normal;
+    }
 }
 /* //////////////////////////////////////////////////////////// */
 /* ///////////////////// max-width: 390px ///////////////////// */
@@ -1015,12 +1011,8 @@ footer > p {
         white-space: normal;
     }
 
-    .CONTACT_wrapper {
-        padding: 30px 0 30px 2rem;
-    }
-
     #CONTACT > p {
-        margin: 16px 0 20px;
+        margin: 16px 1rem 20px;
     }
 
     .banner_wrapper .banner_img {
@@ -1090,9 +1082,5 @@ footer > p {
     #thank_you .thank_you_img {
         max-width: 200px;
         margin-bottom: 20px;
-    }
-
-    #thank_you p {
-        text-align: left;
     }
 }
