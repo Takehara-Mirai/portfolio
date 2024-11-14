@@ -901,6 +901,14 @@ footer > p {
         bottom: 46px;
     }
 
+    .website_cur, #baneer_real_estate, #baneer_xmas, #dtp_card, #dtp_fryer {
+        margin-top: 40px;
+    }
+
+    #website_port, #baneer_real_estate, #baneer_line, #baneer_xmas, #baneer_halloween, #dtp_fryer, #dtp_zoo_icon, #dtp_team_logo {
+        margin-top: 160px;
+    }
+
     #ABOUT_top .name_ruby {
         gap: 20px;
     }
@@ -931,14 +939,6 @@ footer > p {
 /* //////////////////////////////////////////////////////////// */
 /* ///////////////////// max-width: 420px ///////////////////// */
 @media screen and (max-width: 420px) {
-    .website_cur, #baneer_real_estate, #baneer_xmas, #dtp_card, #dtp_fryer {
-        margin-top: 20px;
-    }
-
-    #website_port, #baneer_real_estate, #baneer_line, #baneer_xmas, #baneer_halloween, #dtp_fryer, #dtp_zoo_icon, #dtp_team_logo {
-        margin-top: 120px;
-    }
-
     .website_text_inner,
     .banner_text_inner,
     .dtp_text_inner {
