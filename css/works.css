@@ -13,7 +13,7 @@
 .border_Immediately::after {
     background-color: #4e4e4e; 
     content: "";
-    height: 1.6px; /* 横線の高さ */
+    height: 1px; /* 横線の高さ */
     width: 100%; /* 横線の長さ */
     animation: border_anim 1s linear forwards;
     margin-left: 1rem;
