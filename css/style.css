@@ -935,6 +935,10 @@ footer > p {
         width: 60%;
     }
 
+    #baneer_Introductory .banner_img {
+        width: 90%;
+    }
+
     #VISION {
         margin-top: 40px;
     }
@@ -986,6 +990,11 @@ footer > p {
     #dtp_fryer .dtp_wrapper .dtp_img_wrapper .dtp_img {
         width: 70%;
     }
+
+    #dtp_namikidai_logo .dtp_wrapper .dtp_img,
+    #dtp_team_logo .dtp_wrapper .dtp_img{
+    width: 90%;
+}
 
     .ABOUT_img {
         max-width: 200px;

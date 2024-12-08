@@ -118,8 +118,11 @@
 #baneer_line,
 #baneer_xmas,
 #baneer_halloween,
+#baneer_coupon,
+#baneer_Introductory,
 #dtp_fryer,
 #dtp_zoo_icon,
+#dtp_namikidai_logo,
 #dtp_team_logo {
     margin-top: 200px;
 }
@@ -162,6 +165,11 @@
     margin-inline: auto;
 }
 
+#baneer_Introductory .banner_img {
+    width: 70%;
+    margin-inline: auto;
+}
+
 /* ::::::::::::::::::::::: DTP :::::::::::::::::::::: */
 .dtp_wrapper .dtp_img_wrapper {
     max-width: 660px;
@@ -180,8 +188,9 @@
     width: 45%;
 }
 
+#dtp_namikidai_logo .dtp_wrapper .dtp_img,
 #dtp_team_logo .dtp_wrapper .dtp_img{
-    width: 80%;
+    width: 70%;
     margin-inline: auto;
     margin-top: 60px;
 }
