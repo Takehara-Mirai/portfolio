@@ -179,13 +179,13 @@ main > p,
 }
 
 /* クリックしてないリンク */
-.WEBSITE .website_cur .website_wrapper #website_text_wrapper a:link,
+.WEBSITE .website_cur .website_wrapper .website_text_wrapper a:link,
 #PASSTIME .PASSTIME_wrapper .PASSTIME_account .account p > a:link {
     color: #1a0dab;
     border-bottom: 1px solid #1a0dab;
 }
 /* クリック済みリンク */
-.WEBSITE .website_cur .website_wrapper #website_text_wrapper a:visited,
+.WEBSITE .website_cur .website_wrapper .website_text_wrapper a:visited,
 #PASSTIME .PASSTIME_wrapper .PASSTIME_account .account p > a:visited {
     color: #660099;
     border-bottom: 1px solid #660099;

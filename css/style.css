@@ -550,12 +550,12 @@ svg.active .svg-elem-12 {
 }
 
 #ABOUT_bottom p:nth-child(1) {
-    font-size: clamp(1.125rem, 0.875rem + 1.25vw, 1.813rem);
+    font-size: clamp(1.125rem, 0.625rem + 2.5vw, 1.875rem);
     text-align: center;
 }
 
 #ABOUT_bottom p:nth-child(2) {
-    margin: 30px 0 20px;
+    margin: 40px 0 20px;
 }
 
 
@@ -799,9 +799,9 @@ footer > p {
         margin-top: 10px;
     }
 
-    #website_text_wrapper,
-    #banner_text_wrapper,
-    #dtp_text_wrapper {
+    .website_text_wrapper,
+    .banner_text_wrapper,
+    .dtp_text_wrapper {
         margin-top: 40px;
     }
 
@@ -942,10 +942,7 @@ footer > p {
         width: 70%;
     }
 
-    #baneer_halloween .banner_img {
-        width: 60%;
-    }
-
+    #baneer_halloween .banner_img,
     #baneer_coupon .banner_wrapper .banner_img {
         width: 60%;
     }
@@ -1004,10 +1001,15 @@ footer > p {
 
     #dtp_namikidai_logo .dtp_wrapper .dtp_img{
     width: 90%;
-}
+    }
 
     .ABOUT_img {
         max-width: 200px;
+    }
+
+    #ABOUT_bottom p:nth-child(1) {
+        text-align: left;
+        white-space: nowrap;
     }
 
     .CONTACT_inner {
@@ -1058,6 +1060,10 @@ footer > p {
         margin-top: 20px;
     }
 
+    #ABOUT_bottom p:nth-child(1) {
+        white-space: normal;
+    }
+
     .CONTACT_wrapper > p {
         width: 100%;
         white-space: normal;
@@ -1067,7 +1073,9 @@ footer > p {
         margin: 16px 1rem 20px;
     }
 
-    .banner_wrapper .banner_img {
+    .banner_wrapper .banner_img,
+    #baneer_halloween .banner_img,
+    #baneer_coupon .banner_wrapper .banner_img {
         width: 80%;
     }
 
@@ -1075,40 +1083,20 @@ footer > p {
         width: 100%;
     }
 
-    #baneer_halloween .banner_img,
-    #baneer_coupon .banner_wrapper .banner_img {
-        width: 80%;
-    }
-
-    #STRONGTH .STRONGTH_text .lineBreak {
+    #STRONGTH .STRONGTH_text .lineBreak,
+    #SKILL .SKILL_wrapper {
         padding-left: 1rem;
     }
 
     #SKILL .SKILL_wrapper .SKILL_inner {
         margin-bottom: 30px;
     }
-
-    #SKILL .SKILL_wrapper {
-        padding-left: 1rem;
-    }
 }
 
 /* //////////////////////////////////////////////////////////// */
 /* ///////////////////// max-width: 320px ///////////////////// */
 @media screen and (max-width: 320px) {
-    #mv h1::before {
-        right: 35%;
-        top: -0.1%;
-    }
-
-    #mv h1::after {
-        right: 31%;
-        top: -0.1%;
-    }
-
-    #ABOUT_bottom p:nth-child(1) {
-        white-space: normal;
-    }
+    
 
     #thank_you .thank_you_img {
         max-width: 200px;

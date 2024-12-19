@@ -38,7 +38,7 @@
 
 /* :::::::::::::::::::: コンテンツ幅 :::::::::::::::::::: */
 .website_wrapper,
-#banner_text_wrapper,
+.banner_text_wrapper,
 .dtp_wrapper {
     max-width: 700px;
     margin-inline: auto;
@@ -55,9 +55,9 @@
 }
 
 /* :::::::::::::::::::: 説明文 :::::::::::::::::::: */
-#website_text_wrapper,
-#banner_text_wrapper,
-#dtp_text_wrapper {
+.website_text_wrapper,
+.banner_text_wrapper,
+.dtp_text_wrapper {
     margin-top: 80px;
 }
 
@@ -122,7 +122,6 @@
 #dtp_fryer,
 #dtp_zoo_icon,
 #dtp_namikidai_logo,
-#dtp_shop_logo,
 #dtp_shop_card,
 #dtp_wrapping {
     margin-top: 200px;
@@ -197,8 +196,7 @@
     width: 45%;
 }
 
-#dtp_namikidai_logo .dtp_wrapper .dtp_img,
-#dtp_shop_logo .dtp_wrapper .dtp_img{
+#dtp_namikidai_logo .dtp_wrapper .dtp_img{
     width: 70%;
     margin-inline: auto;
     margin-top: 60px;
