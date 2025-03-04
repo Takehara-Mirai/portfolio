@@ -13,37 +13,34 @@ main > p,
     text-align: center;
 }
 
-#VISION {
-    margin-top: 80px;
+#VISION,
+#STRONGTH .STRONGTH_text {
+    margin-top: 64px;
 }
 
 #VISION > p,
 #STRONGTH .STRONGTH_text p:nth-child(1),
-#PASSTIME > p:nth-child(3) {
+#PASSTIME > p:nth-child(3),
+#thank_you > p {
     font-family: "ta-koigokoro";
-    font-size: clamp(1.125rem, 0.784rem + 1.7vw, 1.875rem);
+    font-size: clamp(1.125rem, 0.894rem + 1.15vw, 1.688rem);
     text-align: center;
+    line-height: 1.8;
 }
 
-#VISION .VISION_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
+#thank_you > p{
+    line-height: 2.5;
+}
+
+#VISION .VISION_text,
+#STRONGTH .STRONGTH_text p:nth-child(2) {
     margin-top: 30px;
-}
-
-#VISION .VISION_wrapper .VISION_text {
-    flex-basis: 70%;
     line-height: 1.2rem;
 }
 
-#VISION .VISION_wrapper .VISION_text p:nth-child(2) {
-    margin: 20px 0 20px;
-}
-
-#VISION .VISION_wrapper .VISION_img {
-    flex-basis: 15%;
+#VISION .VISION_text p:nth-child(2),
+#STRONGTH .STRONGTH_text p:nth-of-type(3) {
+    margin: 16px 0 16px;
 }
 
 /* ::::::::::::::::::::::: STRONGTH ::::::::::::::::::::::: */
@@ -59,26 +56,6 @@ main > p,
     font-family: "mendl-sans-dusk";
     font-weight: 600;
     text-align: center;
-}
-
-.STRONGTH_wrapper {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-}
-
-.STRONGTH_wrapper .STRONGTH_img {
-    flex-basis: 25%;
-}
-
-.STRONGTH_wrapper .STRONGTH_text {
-    flex-basis: 60%;
-}
-
-.STRONGTH_wrapper .STRONGTH_text p:nth-child(2) {
-    margin-top: 30px;
 }
 
 /* ::::::::::::::::::::::: SKILL ::::::::::::::::::::::: */
@@ -131,66 +108,61 @@ main > p,
 }
 
 #PASSTIME > p:nth-child(3) {
-    text-align: left;
     margin-top: 40px;
 }
 
-#PASSTIME .PASSTIME_wrapper {
+#PASSTIME .PASSTIME_text {
+    margin-top: 40px;
+}
+
+#PASSTIME .PASSTIME_text p + p {
+    margin-top: 20px;
+}
+
+#PASSTIME .PASSTIME_account {
+    margin-top: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 4rem;
 }
 
-#PASSTIME .PASSTIME_wrapper .PASSTIME_text {
-    margin-top: 40px;
-    flex-basis: 65%;
-}
-
-#PASSTIME .PASSTIME_wrapper .PASSTIME_img {
-    flex-basis: 30%;
-}
-
-#PASSTIME .PASSTIME_wrapper .PASSTIME_text p + p {
-    margin-top: 20px;
-}
-
-#PASSTIME .PASSTIME_wrapper .PASSTIME_account {
-    margin-top: 20px;
-}
-
-#PASSTIME .PASSTIME_wrapper .PASSTIME_account .account {
+#PASSTIME .PASSTIME_account .account {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-basis: 40%;
 }
 
-#PASSTIME .PASSTIME_wrapper .PASSTIME_account .account .icon:not(:last-child) {
-    margin-bottom: 0.5rem;
+#PASSTIME .PASSTIME_account .account:nth-child(1){
+    justify-content: flex-end;
 }
 
-#PASSTIME .PASSTIME_wrapper .PASSTIME_account .account .icon {
+#PASSTIME .PASSTIME_account .account .icon {
     flex-basis: 25px;
 }
 
-#PASSTIME .PASSTIME_wrapper .PASSTIME_account .account p {
+
+#PASSTIME .PASSTIME_account .account:nth-child(2) .icon {
+    flex-basis: 23px;
+}
+
+#PASSTIME .PASSTIME_account .account p {
     font-size: clamp(0.6rem, 0.679rem + 0.36vw, 0.7rem);
     letter-spacing: normal;
 }
 
 /* クリックしてないリンク */
-.WEBSITE .website_cur .website_wrapper .website_text_wrapper a:link,
-#PASSTIME .PASSTIME_wrapper .PASSTIME_account .account p > a:link {
+.WEBSITE #website_shouei .website_wrapper .website_text_wrapper a:link,
+.WEBSITE #website_cur .website_wrapper .website_text_wrapper a:link,
+#PASSTIME .PASSTIME_account .account p > a:link {
     color: #1a0dab;
     border-bottom: 1px solid #1a0dab;
 }
 /* クリック済みリンク */
-.WEBSITE .website_cur .website_wrapper .website_text_wrapper a:visited,
-#PASSTIME .PASSTIME_wrapper .PASSTIME_account .account p > a:visited {
+.WEBSITE #website_shouei .website_wrapper .website_text_wrapper a:link,
+.WEBSITE #website_cur .website_wrapper .website_text_wrapper a:visited,
+#PASSTIME .PASSTIME_account .account p > a:visited {
     color: #660099;
     border-bottom: 1px solid #660099;
-}
-
-#PASSTIME .PASSTIME_wrapper .PASSTIME_account .account:nth-child(2) .icon {
-    flex-basis: 23px;
 }

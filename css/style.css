@@ -434,7 +434,7 @@ svg.active .svg-elem-12 {
     box-sizing: border-box;
 }
 .item_box {
-    width: 36%;
+    width: 40%;
 }
 
 .item_link {
@@ -491,13 +491,6 @@ svg.active .svg-elem-12 {
 /* ----------------------------------------------------- */
 
 /* ::::::::::::::::::::::: ABOUT ::::::::::::::::::::::: */
-#ABOUT,
-.CONTACT_wrapper,
-#thank_you {
-    max-width: 800px;
-    margin-inline: auto;
-}
-
 #ABOUT {
     margin-top: 140px;
 }
@@ -539,35 +532,23 @@ svg.active .svg-elem-12 {
 
 #ABOUT .button {
     margin-top: 40px;
+    text-align: left;
 }
 
 .ABOUT_img {
-    flex-basis: 35%;
-}
-
-#ABOUT_bottom {
-    margin-top: 120px;
-}
-
-#ABOUT_bottom p:nth-child(1) {
-    font-size: clamp(1.125rem, 0.625rem + 2.5vw, 1.875rem);
-    text-align: center;
-}
-
-#ABOUT_bottom p:nth-child(2) {
-    margin: 40px 0 20px;
+    flex-basis: 34%;
 }
 
 
 /* ::::::::::::::::::::::: thank you ::::::::::::::::::::::: */
 #thank_you {
-    margin-top: 200px;
-    text-align: center;
+    max-width: 800px;
+    margin-inline: auto;
 }
 
-#thank_you .thank_you_img {
-    max-width: 300px;
-    margin: 0 auto 40px;
+#thank_you {
+    margin-top: 200px;
+    text-align: center;
 }
 
 /* *********************************************************************** */
@@ -578,6 +559,11 @@ svg.active .svg-elem-12 {
     text-align: center;
     margin-top: 200px;
     padding: 60px 0;
+}
+
+.CONTACT_wrapper {
+    max-width: 800px;
+    margin-inline: auto;
 }
 
 #CONTACT h2 {
@@ -636,18 +622,6 @@ svg.active .svg-elem-12 {
 .CONTACT_inner .mail .mail_text,
 .CONTACT_inner .tel .tel_text {
     border-bottom: 1px solid #33334d;
-}
-
-.CONTACT_wrapper > p {
-    margin: 20px auto 0;
-    text-align: center;
-    position: relative;
-    white-space: nowrap;
-}
-
-.CONTACT_wrapper > p::before {
-    content: "※";
-    left: -1rem;
 }
 
 footer > p {
@@ -745,7 +719,7 @@ footer > p {
         top: 0;
         transition: all 0.3s linear;
         z-index: 20000;
-        opacity: 0.8;
+        opacity: 0.92;
     }
 
     .header_wrapper #header_menu #menu li:nth-child(1) {
@@ -770,7 +744,7 @@ footer > p {
     }
 
     #ABOUT_top {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 40px;
     }
 
@@ -779,15 +753,24 @@ footer > p {
     }
 
     .ABOUT_img {
-        max-width: 250px;
+        max-width: 200px;
+    }
+
+    #ABOUT_top .name_ruby {
+        justify-content: center;
+    }
+
+    #ABOUT_top .text_wrapper .name{
+        text-align: center;
     }
 
     #ABOUT_top .text_wrapper > .text {
-        margin-top: 20px;
+        margin-top: 32px;
     }
 
     #ABOUT .button {
-        margin-top: 20px;
+        margin-top: 32px;
+        text-align: center;
     }
 
     .website_wrapper,
@@ -821,32 +804,8 @@ footer > p {
         gap: 0;
     }
 
-    #VISION > p {
-        text-align: center;
-    }
-
-    #VISION > p .lineBreak,
-    #STRONGTH .STRONGTH_text .lineBreak {
+    #VISION > p .lineBreak {
         padding-top: 0.3rem;
-    }
-
-    #VISION .VISION_wrapper {
-        flex-direction: column-reverse;
-        gap: 1.5rem;
-    }
-
-    #STRONGTH .STRONGTH_wrapper {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .VISION_wrapper .VISION_img {
-        width: 150px;
-    }
-
-    .STRONGTH_wrapper .STRONGTH_img,
-    #PASSTIME .PASSTIME_wrapper .PASSTIME_img {
-        max-width: 200px;
     }
 
     #SKILL .SKILL_wrapper .flex {
@@ -864,35 +823,17 @@ footer > p {
         margin-top: 0;
     }
 
-    #PASSTIME {
-        padding-inline: 1.5rem;
+    #PASSTIME .PASSTIME_account {
+        gap: 1.2rem;
+        flex-direction: column;
     }
 
-    #PASSTIME > p:nth-child(3) {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    #PASSTIME .PASSTIME_wrapper {
-        flex-direction: column-reverse;
-        gap: 0.8rem;
-    }
-
-    #PASSTIME .PASSTIME_wrapper .PASSTIME_text {
-        margin-top: 0;
-        word-break: break-all;
-    }
-
-    #thank_you .thank_you_img {
-        width: 250px;
-        margin: 0 auto 40px;
-    }
-
-    #thank_you p + p {
-        margin-top: 0;
+    #PASSTIME .PASSTIME_account .account:nth-child(1),
+    #PASSTIME .PASSTIME_account .account {
+        flex-basis: 100%;
+        justify-content: center;
     }
 }
-
 /* //////////////////////////////////////////////////////////// */
 /* ///////////////////// max-width: 600px ///////////////////// */
 @media screen and (max-width: 562px){
@@ -916,11 +857,11 @@ footer > p {
         bottom: 46px;
     }
 
-    .website_cur, #baneer_real_estate, #baneer_xmas, #dtp_card, #dtp_fryer {
+    #website_shouei,#website_cur, #baneer_real_estate, #baneer_xmas, #dtp_card, #dtp_fryer {
         margin-top: 40px;
     }
 
-    #website_port, #baneer_real_estate, #baneer_line, #baneer_xmas, #baneer_halloween, #dtp_fryer, #dtp_zoo_icon {
+    #website_port, #baneer_real_estate, #baneer_line, #baneer_xmas, #baneer_halloween, #dtp_fryer, #dtp_zoo_icon, #website_cur, #shouei_mb_design {
         margin-top: 160px;
     }
 
@@ -947,12 +888,15 @@ footer > p {
         width: 60%;
     }
 
-    #VISION {
-        margin-top: 40px;
+    #shouei_pc_design .design_pc_wrapper{
+        display: flex;
+        justify-content: space-between;
+        gap: calc(2rem / 2);
+        flex-wrap: wrap;
     }
 
-    .VISION_wrapper .VISION_img {
-        max-width: 120px;
+    #VISION {
+        margin-top: 40px;
     }
 }
 
@@ -1000,7 +944,17 @@ footer > p {
     }
 
     #dtp_namikidai_logo .dtp_wrapper .dtp_img{
-    width: 90%;
+        width: 90%;
+    }
+
+    #shouei_pc_design .design_pc_wrapper .pc_img,
+    #shouei_mb_design .design_mb_wrapper .mb_img{
+        flex-basis: 100%;
+    }
+
+    #shouei_pc_design .design_pc_wrapper .pc_img:nth-of-type(n+2),
+    #shouei_mb_design .design_mb_wrapper .mb_img:nth-of-type(n+2){
+        margin-top: 80px;
     }
 
     .ABOUT_img {
@@ -1069,10 +1023,6 @@ footer > p {
         white-space: normal;
     }
 
-    #CONTACT > p {
-        margin: 16px 1rem 20px;
-    }
-
     .banner_wrapper .banner_img,
     #baneer_halloween .banner_img,
     #baneer_coupon .banner_wrapper .banner_img {
@@ -1090,16 +1040,5 @@ footer > p {
 
     #SKILL .SKILL_wrapper .SKILL_inner {
         margin-bottom: 30px;
-    }
-}
-
-/* //////////////////////////////////////////////////////////// */
-/* ///////////////////// max-width: 320px ///////////////////// */
-@media screen and (max-width: 320px) {
-    
-
-    #thank_you .thank_you_img {
-        max-width: 200px;
-        margin-bottom: 20px;
     }
 }

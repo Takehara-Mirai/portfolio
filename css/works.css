@@ -10,15 +10,18 @@
 
 /* ボーダー線 */
 .border.line::after,
-.border_Immediately::after {
+.border_Immediately::after,
+.border_Immediately_different::after {
     background-color: #4e4e4e; 
     content: "";
     height: 1px; /* 横線の高さ */
     width: 100%; /* 横線の長さ */
-    animation: border_anim 1s linear forwards;
     margin-left: 1rem;
 }
-
+.border.line::after,
+.border_Immediately::after{
+    animation: border_anim 1s linear forwards;
+}
 @keyframes border_anim {
     0% {
         width: 0%;
@@ -27,12 +30,25 @@
         width: 87%;
     }
 }
+.border_Immediately_different{
+    animation: border_anim_different 1s linear forwards;
+}
+@keyframes border_anim_different {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
 
-.website_cur,
+#website_shouei,
 #baneer_real_estate,
 #baneer_xmas,
 #dtp_card,
-#dtp_fryer {
+#dtp_fryer,
+#shouei_pc_design,
+#shouei_mb_design {
     margin-top: 80px;
 }
 
@@ -50,8 +66,22 @@
 
 .website_wrapper,
 .banner_wrapper,
-.dtp_wrapper {
+.dtp_wrapper,
+.design_pc_wrapper,
+.design_mb_wrapper {
     margin: 40px auto 0;
+}
+
+/* :::::::::::::::::::: シャドウ :::::::::::::::::::: */
+.WEBSITE .website_img img,
+.WEBSITE .banner_img img,
+.DTP #dtp_card .dtp_img img,
+.DTP #dtp_fryer .dtp_img img,
+.DTP #dtp_shop_card .dtp_img img,
+.DTP #dtp_wrapping .dtp_img img,
+#shouei_pc_design .design_pc_wrapper .pc_img img,
+#shouei_mb_design .design_mb_wrapper .mb_img img{
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* :::::::::::::::::::: 説明文 :::::::::::::::::::: */
@@ -112,6 +142,7 @@
     width: 30px;
 }
 
+#website_cur,
 #website_port,
 #website_hoshinami,
 #baneer_real_estate,
@@ -123,7 +154,8 @@
 #dtp_zoo_icon,
 #dtp_namikidai_logo,
 #dtp_shop_card,
-#dtp_wrapping {
+#dtp_wrapping,
+#shouei_mb_design {
     margin-top: 200px;
 }
 
@@ -202,13 +234,36 @@
     margin-top: 60px;
 }
 
-#dtp_shop_card .dtp_img_wrapper .dtp_img,
-#dtp_wrapping .dtp_wrapper .dtp_img{
-    border: 1px solid #c4c4c4;
-}
-
 #dtp_wrapping .dtp_wrapper .dtp_img{
     width: 100%;
     margin-inline: auto;
     margin-top: 60px;
+}
+
+/* ::::::::::::::::::::::: 匠栄デザイン還付ページ :::::::::::::::::::::: */
+#shouei_pc_design .design_pc_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: calc(2rem / 2);
+    flex-wrap: wrap;
+}
+
+#shouei_pc_design .design_pc_wrapper .pc_img{
+    flex-basis: calc((100% / 2) - (2rem / 2));
+}
+
+#shouei_pc_design .design_pc_wrapper .pc_img:nth-of-type(n+3),
+#shouei_mb_design .design_mb_wrapper .mb_img:nth-of-type(n+4){
+    margin-top: 120px;
+}
+
+#shouei_mb_design .design_mb_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: calc(2rem / 3);
+    flex-wrap: wrap;
+}
+
+#shouei_mb_design .design_mb_wrapper .mb_img{
+    flex-basis: calc((100% / 3) - (2rem / 3));
 }
