@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "竹原 未来のポートフォリオ",
+  "short_name": "竹原 未来のポートフォリオ",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

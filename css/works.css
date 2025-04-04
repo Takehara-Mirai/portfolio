@@ -4,7 +4,7 @@
 .DTP h4 {
     font-family: "mendl-sans-dusk";
     align-items: center; 
-    display: flex; 
+    display: flex;
     white-space: nowrap;
 }
 
@@ -27,7 +27,7 @@
         width: 0%;
     }
     100% {
-        width: 87%;
+        width: 100%;
     }
 }
 .border_Immediately_different{
@@ -42,24 +42,14 @@
     }
 }
 
-#website_shouei,
-#baneer_real_estate,
-#baneer_xmas,
+#website_kimurakogyo,
 #dtp_card,
-#dtp_fryer,
 #shouei_pc_design,
 #shouei_mb_design {
     margin-top: 80px;
 }
 
 /* :::::::::::::::::::: コンテンツ幅 :::::::::::::::::::: */
-.website_wrapper,
-.banner_text_wrapper,
-.dtp_wrapper {
-    max-width: 700px;
-    margin-inline: auto;
-}
-
 .banner_wrapper {
     max-width: 900px;
 }
@@ -70,6 +60,11 @@
 .design_pc_wrapper,
 .design_mb_wrapper {
     margin: 40px auto 0;
+}
+
+.website_text_wrapper {
+    max-width: 1000px;
+    margin-inline: auto;
 }
 
 /* :::::::::::::::::::: シャドウ :::::::::::::::::::: */
@@ -142,6 +137,7 @@
     width: 30px;
 }
 
+#website_shouei,
 #website_cur,
 #website_port,
 #website_hoshinami,
@@ -161,12 +157,27 @@
 
 /* :::::::::::::::::::: WEB SITE :::::::::::::::::::: */
 .website_wrapper .website_pc_img,
-.website_wrapper .website_img{
+.website_wrapper .website_img_wrapper,
+.website_img_item {
     max-width: 600px;
     margin-inline: auto;
 }
 
-.website_wrapper .website_img {
+.website_wrapper .website_img_wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.website_wrapper .website_img:first-child {
+    width: 80%;
+}
+
+.website_wrapper .website_img:last-child {
+    width: 20%;
+}
+
+.website_wrapper .website_img,
+.website_img_item {
     margin-top: 40px;
 }
 
