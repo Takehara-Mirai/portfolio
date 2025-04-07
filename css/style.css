@@ -853,7 +853,7 @@ footer > p {
     }
 
     #SKILL .SKILL_wrapper .SKILL_inner {
-        margin-bottom: 60px;
+        margin-bottom: 48px;
     }
 
     #SKILL .SKILL_wrapper .flex:not(:first-child) {
@@ -869,6 +869,11 @@ footer > p {
     #PASSTIME .PASSTIME_account .account {
         flex-basis: 100%;
         justify-content: center;
+    }
+
+    #thank_you,
+    #CONTACT {
+        margin-top: 100px;
     }
 }
 /* //////////////////////////////////////////////////////////// */

@@ -71,7 +71,7 @@ main > p,
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 48px;
 }
 
 #SKILL .SKILL_wrapper .SKILL_inner {
@@ -79,10 +79,6 @@ main > p,
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-#SKILL .SKILL_wrapper .flex:not(:first-child) {
-    margin-top: 60px;
 }
 
 #SKILL .SKILL_wrapper .SKILL_inner .SKILL_icon {
