@@ -527,6 +527,7 @@ svg.active .svg-elem-12 {
     align-items: center;
     gap: 40px;
     margin-left: 0.5rem;
+    padding-bottom: 6px;
 }
 
 #ABOUT_top .text_wrapper .name p,
