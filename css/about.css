@@ -24,8 +24,13 @@ main > p,
 #thank_you > p {
     font-family: "ta-koigokoro";
     font-size: clamp(1.125rem, 0.894rem + 1.15vw, 1.688rem);
-    text-align: center;
     line-height: 1.8;
+}
+
+#VISION > p,
+#PASSTIME > p:nth-child(3),
+#thank_you > p {
+    text-align: center;
 }
 
 #thank_you > p{
@@ -38,8 +43,15 @@ main > p,
     line-height: 1.2rem;
 }
 
-#VISION .VISION_text p:nth-child(2),
-#STRONGTH .STRONGTH_text p:nth-of-type(3) {
+#STRONGTH .STRONGTH_text p:nth-child(2){
+    margin-top: 16px;
+}
+
+#STRONGTH .STRONGTH_text p:not(:first-child){
+    line-height: 1.8rem;
+}
+
+#VISION .VISION_text p:nth-child(2) {
     margin: 16px 0 16px;
 }
 
