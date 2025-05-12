@@ -141,6 +141,8 @@
 #website_cur,
 #website_port,
 #website_hoshinami,
+#baneer_eyeshadow,
+#baneer_outer,
 #baneer_real_estate,
 #baneer_line,
 #baneer_xmas,
@@ -203,6 +205,8 @@
     gap: 20px;
 }
 
+#baneer_eyeshadow .banner_img,
+#baneer_outer .banner_img,
 #baneer_halloween .banner_img {
     width: 40%;
     margin-inline: auto;

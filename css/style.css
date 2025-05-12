@@ -917,11 +917,23 @@ footer > p {
         bottom: 46px;
     }
 
-    #website_shouei,#website_cur, #baneer_real_estate, #baneer_xmas, #dtp_card, #dtp_fryer {
-        margin-top: 40px;
-    }
-
-    #website_shouei, #website_port, #baneer_real_estate, #baneer_line, #baneer_xmas, #baneer_halloween, #dtp_fryer, #dtp_zoo_icon, #website_cur, #shouei_mb_design {
+    #website_shouei, 
+    #website_port, 
+    #website_cur, 
+    #website_hoshinami,
+    #baneer_eyeshadow,
+    #baneer_outer,
+    #baneer_real_estate, 
+    #baneer_line, 
+    #baneer_xmas, 
+    #baneer_halloween, 
+    #baneer_coupon,
+    #dtp_fryer, 
+    #dtp_zoo_icon, 
+    #dtp_namikidai_logo,
+    #dtp_shop_card,
+    #dtp_wrapping,
+    #shouei_mb_design {
         margin-top: 160px;
     }
 
@@ -943,6 +955,8 @@ footer > p {
         width: 70%;
     }
 
+    #baneer_eyeshadow .banner_img,
+    #baneer_outer .banner_img,
     #baneer_halloween .banner_img,
     #baneer_coupon .banner_wrapper .banner_img {
         width: 60%;
